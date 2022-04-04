@@ -1,0 +1,4 @@
+docker run --rm -ti --network some-network \
+    -e DOCKER_TLS_CERTDIR=/certs \
+    -v some-docker-certs-client:/certs/client:ro \
+    ubuntu-dev /bin/bash
