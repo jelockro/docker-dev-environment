@@ -1,6 +1,7 @@
 docker run --rm -ti --network some-network \
     -e DOCKER_TLS_CERTDIR=/certs \
     -v some-docker-certs-client:/certs/client:ro \
+    -v terraform:/root/learn-terraform-docker-container \
     ubuntu-dev /bin/bash
 
 docker run --privileged --name some-docker -d \

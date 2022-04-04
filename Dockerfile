@@ -4,7 +4,8 @@ RUN apt-get update &&\
     apt-get install -y curl \
     lsb-release \
     gpg \
-    unzip
+    unzip \
+    git
 
 ## Install Terraform
 # RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor -o /usr/share/keyrings/terraform-archive-keyring.gpg &&\
